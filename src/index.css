@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maxwidth: 1280px;
+  --whitee: #356232;
+  --lightgrey: #eee;
+  --medgrey: #353535;
+  --darkgrey: #1c1c1c;
+  --fontSuperBig: 2.5rem;
+  --fontBig: 1.5rem;
+  --fontMed: 1.2rem;
+  --fontSmall: 1rem;
+}
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity)) /* #475569 */;
+}
