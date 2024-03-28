@@ -37,6 +37,10 @@ const MovieDisplay = () => {
     },
   };
 
+  if(!movies) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       {' '}

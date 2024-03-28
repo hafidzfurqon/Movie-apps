@@ -32,6 +32,10 @@ const TopRated = () => {
     },
   };
 
+  if(!movies) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="px-6">
       <Carousel responsive={responsive} swipeable={true} draggable={true} infinite={true} autoPlay={true} autoPlaySpeed={4500} transitionDuration={500}>

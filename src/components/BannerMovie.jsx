@@ -7,8 +7,10 @@ import { Link } from 'react-router-dom';
 const BannerMovie = () => {
   const [moviePlay, setMoviePlay] = useState([]);
 
+
   useEffect(() => {
     const fetchMovie = async () => {
+
       const response = await fetchMoviePlaying();
       console.log(response);
       setMoviePlay(response.results);
@@ -34,6 +36,10 @@ const BannerMovie = () => {
       items: 1,
     },
   };
+
+  if(!moviePlay) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="relative">
