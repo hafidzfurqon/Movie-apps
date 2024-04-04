@@ -44,7 +44,7 @@ const MovieDisplay = () => {
   return (
     <div>
       {' '}
-      <NavbarComponents />
+      <NavbarComponents title="Baru ya ges ya" />
       <BannerMovie />
       <div className="m-auto w-full px-6 ">
         <h4 className="font-semibold text-2xl mt-10 mb-5 text-white">Discover New Movies</h4>

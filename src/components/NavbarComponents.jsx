@@ -1,6 +1,8 @@
 import React from 'react';
 import Logo from '../assets/Desain_tanpa_judul__1_-removebg-preview.png';
-const NavbarComponents = () => {
+const NavbarComponents = (props) => {
+
+  document.title = props.title 
   return (
     <nav className="font-mono border-gray-20 bg-gray-800 border-gray-700 absolute w-full z-10 backdrop-filter backdrop-blur-lg opacity-50">
       <div className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-8">
