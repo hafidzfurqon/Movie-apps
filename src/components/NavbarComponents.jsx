@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/Desain_tanpa_judul__1_-removebg-preview.png';
+import { Link } from 'react-router-dom';
 const NavbarComponents = (props) => {
 
   document.title = props.title 
@@ -8,7 +9,7 @@ const NavbarComponents = (props) => {
       <div className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-8">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img src={Logo} className="h-40 w-40" alt="Flowbite Logo" /> */}
-          <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Hafidz Movie</span>
+          <Link to="/"><span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Hafidz Movie</span></Link>
         </a>
         <button
           data-collapse-toggle="navbar-solid-bg"
