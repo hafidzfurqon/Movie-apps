@@ -10,7 +10,6 @@ const DetailMovie = () => {
   const [movie, setMovie] = useState(null);
   const [cast, setmovieCast] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState(null);
-document.title = "Muhammad Hafidz Movie List Details"
   useEffect(() => {
     const fetchData = async () => {};
   });
@@ -20,6 +19,7 @@ document.title = "Muhammad Hafidz Movie List Details"
       const response = await fetchMovieDetail(id);
       const responsee = await fetchMovieCast(id);
       const trailer = await fetchMovieTrailer(id);
+      console.log(response);
       setmovieCast(responsee);
       setMovie(response);
       setTrailerUrl(trailer);
