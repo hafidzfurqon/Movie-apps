@@ -7,10 +7,10 @@ const NavbarComponents = (props) => {
   return (
     <nav className="font-mono border-gray-20 bg-gray-800 border-gray-700 absolute w-full z-10 backdrop-filter backdrop-blur-lg opacity-50">
       <div className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 py-8">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <img src={Logo} className="h-40 w-40" alt="Flowbite Logo" /> */}
-          <Link to="/"><span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Hafidz Movie</span></Link>
-        </a>
+          <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Hafidz Movie</span>
+        </Link>
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
