@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 
 
 const MovieDisplay = () => {
+  document.title = "HAFIDZ MOVIES"
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {

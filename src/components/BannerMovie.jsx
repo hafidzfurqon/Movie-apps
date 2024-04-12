@@ -12,7 +12,6 @@ const BannerMovie = () => {
     const fetchMovie = async () => {
 
       const response = await fetchMoviePlaying();
-      console.log(response);
       setMoviePlay(response.results);
     };
     fetchMovie();
