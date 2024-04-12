@@ -17,7 +17,6 @@ const MovieDisplay = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetchMovieData();
-      // console.log(response);
       setMovies(response.results);
     };
     fetchData();

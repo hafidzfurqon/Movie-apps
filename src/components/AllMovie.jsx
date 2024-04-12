@@ -9,7 +9,6 @@ const AllMovie = () => {
   useEffect(() => {
     const fetchAlllMovie = async () => {
       const response = await fetchAllMovie();
-      // console.log(response);
       setMovies(response.results);
     };
     fetchAlllMovie();

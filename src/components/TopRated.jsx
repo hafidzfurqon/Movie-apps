@@ -10,7 +10,6 @@ const TopRated = () => {
   useEffect(() => {
     const fetchMovieTopRated = async () => {
       const response = await fetchMovieTop();
-      // console.log(response);
       setMovies(response.results);
     };
 
