@@ -44,7 +44,7 @@ const MovieDisplay = () => {
   return (
     <div>
       {' '}
-      <NavbarComponents title ="Hafidz-Movie-List"/>
+      <NavbarComponents />
       <BannerMovie />
       <div className="m-auto w-full px-6 ">
         <h4 className="font-semibold text-2xl mt-10 mb-5 text-white">Discover New Movies</h4>
@@ -80,10 +80,10 @@ const MovieDisplay = () => {
         </Carousel>
       </div>
       <h4 className="px-6 font-semibold text-2xl mt-10 mb-5 text-white">Discover Top Movies</h4>
-      <TopRated title="Hafidz-Movie-List" />
+      <TopRated  />
       <h1 className="font-semibold text-3xl mt-10 mb-5 text-white flex justify-center items-center">All Movies</h1>
-      <AllMovie title="Hafidz-Movie-List" />
-      <Footer  title="Hafidz-Movie-List"/>
+      <AllMovie  />
+      <Footer  />
     </div>
   );
 };
