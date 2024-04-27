@@ -1,3 +1,7 @@
+This project is deploy by vercel and you can find the website here:
+https://hafidz-movie-list.vercel.app/
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
