@@ -10,9 +10,14 @@ const DetailMovie = () => {
   const [movie, setMovie] = useState(null);
   const [cast, setmovieCast] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState(null);
-  useEffect(() => {
-    const fetchData = async () => {};
-  });
+  const [opened, setOpened] = useState(false)
+
+  const handleClick = () => {
+    setOpened(!opened)
+  }
+
+
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,12 +28,17 @@ const DetailMovie = () => {
       setmovieCast(responsee);
       setMovie(response);
       setTrailerUrl(trailer);
+
+      const trailerlink = trailer.substring(32, 50)
+      console.log(trailerlink)
     };
     fetchData();
   }, [id]);
 
+ 
+
   if (!movie) {
-    return <div>Loading...</div>;
+    return <div className='text-white text-2xl w-full mx-auto uppercase'>Loading...</div>;
   }
   const responsive = {
     desktop: {
@@ -44,6 +54,9 @@ const DetailMovie = () => {
       items: 1,
     },
   };
+
+const linkTrailer = trailerUrl.substring(32, 50)
+
 
   return (
     <div>
@@ -66,9 +79,17 @@ const DetailMovie = () => {
               </div>
               <h1 className="lg:font-semibold lg:text-xl width-[100px] text-white">Status: {movie.status}</h1>
               <div className="sm:block sm:m-2 lg:flex gap-3 mt-3">
-                <a href={trailerUrl} target="_blank" rel="noopener noreferrer">
-                  <button className="font-semibold text-xl width-[100px] text-white bg-blue-300 rounded-xl px-3">Trailer</button>
-                </a>
+                <div >
+                  <button onClick={handleClick} className="font-semibold text-xl width-[100px] text-white bg-blue-300 rounded-xl px-3">Trailer</button>
+                </div>
+
+            { opened ?  <div className='fixed top-32 left-0  w-full h-96 flex items-center justify-center'>
+                  <div className='bg-white rounded shadow-md p-8 w-[80%] flex items-center justify-center'>
+                  <iframe className=' rounded-md w-full h-[80vh]' src={`https://www.youtube.com/embed/${linkTrailer}?si=cFJSb17ds93GR4ly`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+               
+                </div> :  "dsada"}
+
 
                 <Link to="/">
                   {' '}
