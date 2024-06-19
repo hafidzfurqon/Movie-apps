@@ -84,7 +84,7 @@ const DetailMovie = () => {
           </div>
           <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
         </div>
-        <div className="flex mx-3 pt-36 lg:px-32 flex-wrap">
+        <div className="flex mx-3 pt-36 lg:px-32 flex-wrap flex-col lg:flex">
           <div className="w-full lg:w-5/6">
             <h1 className="font-bold text-3xl text-white">Overview</h1>
             <p className="text-white">{movie.overview}</p>
