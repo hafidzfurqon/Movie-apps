@@ -10,7 +10,7 @@ export default {
     },
     plugins: [require('daisyui')],
     screens: {
-      sm: '460px',
+      sm: '360px',
       // => @media (min-width: 640px) { ... }
 
       md: '754px',

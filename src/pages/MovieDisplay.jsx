@@ -46,7 +46,7 @@ const MovieDisplay = () => {
       {' '}
       <NavbarComponents title = "HAFIDZ MOVIES" />
       <BannerMovie />
-      <div className="m-auto w-full px-6 flex justify-center">
+      <div className="m-auto w-full px-6 mx-auto">
         <h4 className="font-semibold text-2xl mt-10 mb-5 text-white">Discover New Movies</h4>
         <Carousel responsive={responsive} swipeable={true} draggable={true} infinite={true} autoPlay={true} autoPlaySpeed={4500} transitionDuration={500}>
           {movies.map((movie) => (
