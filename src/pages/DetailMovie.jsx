@@ -49,7 +49,7 @@ const DetailMovie = () => {
     <div>
       <NavbarComponents />
       <div className="relative">
-        <div className="relative w-full h-[60vh] lg:h-[90vh]">
+        <div className="relative w-full h-[60vh] lg:h-[100vh]">
           <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title} className="w-full h-full object-cover opacity-80" />
           <div className="absolute -bottom-32 z-10 md:left-10 lg:left-28 flex">
             <div className="max-w-[12rem] mx-5">
