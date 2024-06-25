@@ -45,8 +45,13 @@ const DetailMovie = () => {
     mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
   };
 
+  if(document.title === undefined) {
+    return document.title = 'Detail Movie'
+  }
+
   return (
     <div>
+<title>Detail Movie</title>
       <NavbarComponents />
       <div className="relative">
         <div className="relative w-full h-[60vh] lg:h-[100vh]">

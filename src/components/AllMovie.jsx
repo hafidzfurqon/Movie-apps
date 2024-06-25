@@ -43,12 +43,6 @@ const AllMovie = () => {
     setCurrentPage(page)
   } 
 
-//   useEffect(() => {
-// fetchMovies(1)
-//   }, [value])
-
-  console.log(query)
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     fetchMovies(1)
