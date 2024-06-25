@@ -137,3 +137,20 @@ const fetchMovieDetail = async (id) => {
 };
 
 export { fetchMovieDetail };
+
+
+export const AxiosInstance = axios.create({
+  baseURL : 'https://api.themoviedb.org/3',
+})
+
+
+const apiKeY = 'a98292df884f804c7aaff54aa96d5c6d';
+export const FetchMoviesQuery = async (query) => {
+  const response = await AxiosInstance.get(`/search/movie`, {
+    params : {
+      api_key : apiKeY,
+      query : query 
+    }
+  })
+  return response.data;
+}

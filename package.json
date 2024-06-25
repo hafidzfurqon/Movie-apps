@@ -22,7 +22,8 @@
     "react-router-dom": "^6.22.3",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
-    "styled": "^1.0.0"
+    "styled": "^1.0.0",
+    "use-debounce": "^10.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
