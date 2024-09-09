@@ -9,9 +9,8 @@ import AllMovie from '../components/AllMovie';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
-
 const MovieDisplay = () => {
-  document.title = "HAFIDZ MOVIES"
+  document.title = 'HAFIDZ MOVIES';
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -37,14 +36,14 @@ const MovieDisplay = () => {
     },
   };
 
-  if(!movies) {
+  if (!movies) {
     return <div>Loading....</div>;
   }
 
   return (
     <div>
       {' '}
-      <NavbarComponents title = "HAFIDZ MOVIES" />
+      <NavbarComponents title="HAFIDZ MOVIES" />
       <BannerMovie />
       <div className="m-auto w-full px-6 mx-auto">
         <h4 className="font-semibold text-2xl mt-10 mb-5 text-white">Discover New Movies</h4>
@@ -80,10 +79,10 @@ const MovieDisplay = () => {
         </Carousel>
       </div>
       <h4 className="px-6 font-semibold text-2xl mt-10 mb-5 text-white">Discover Top Movies</h4>
-      <TopRated  />
+      <TopRated />
       <h1 className="font-semibold text-3xl mt-10 mb-5 text-white flex justify-center items-center">All Movies</h1>
-      <AllMovie  />
-      <Footer  />
+      <AllMovie />
+      <Footer />
     </div>
   );
 };
